@@ -1,4 +1,4 @@
-FROM golang:1.16 AS builder
+FROM golang:1.17.7 AS builder
 WORKDIR /go/src/github.com/ddld93/abedmis/
 RUN go get -d -v golang.org/x/net/html  
 COPY app.go    ./
