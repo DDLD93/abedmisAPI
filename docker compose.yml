@@ -1,0 +1,23 @@
+version: '3.8'
+services:
+  abedmis:
+    build: ./
+    restart: always
+    container_name: 'abedmis'
+    networks:
+        - ujere_net       
+  database:
+    image: mongo:latest
+    restart: always
+    container_name: 'mongodb'
+    ports:
+        - 27017:27017
+    volumes:
+      - mongodata:/data/db
+    networks:
+        - ujere_net     
+networks:
+  ujere_net:
+    driver: bridge          
+volumes:
+  mongodata: 
