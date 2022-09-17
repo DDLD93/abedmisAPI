@@ -4,6 +4,9 @@ services:
     build: ./
     restart: always
     container_name: 'abedmis'
+    environment:
+      - DATABASE_HOST=database
+      - PORT=3000
     networks:
         - ujere_net       
   database:
