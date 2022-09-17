@@ -9,7 +9,6 @@ import (
 	"github.com/ddld93/abedmis/src/middleware"
 	"github.com/ddld93/abedmis/src/routes"
 	"github.com/gin-gonic/gin"
-	"github.com/joho/godotenv"
 
 	_ "github.com/ddld93/abedmis/docs"
 	swaggerFiles "github.com/swaggo/files"
