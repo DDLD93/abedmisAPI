@@ -19,7 +19,7 @@ type Beneficiary struct {
 	Picture       []byte             `json:"picture" bson:"picture"`
 	PaymentMethod string             `json:"paymentMethod" bson:"paymentMethod" binding:"required"`
 	PaymentProof  []byte             `json:"paymentProof" bson:"paymentProof"`
-	Mode           string             `bson:"mode"`
+	Mode           string            `bson:"mode"`
 	UpdatedAt     time.Time          `json:"updatedAt" bson:"updatedAt"`
 	CreatedAt     time.Time          `json:"createdAt" bson:"createdAt"`
 }

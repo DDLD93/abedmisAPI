@@ -19,13 +19,18 @@ type Keys struct {
 var PSP = map[string]Keys{
 	"upperLink": {
 		PSP:       "upperLink",
-		Test_Keys: "testingupperLink",
-		Live_Keys: "livingupperLink",
+		Test_Keys: "test_hbbIVvbjhkBKJBkbKKJBjkbkbkjbKBJKbjhvjhVJKHVjkhvkjhvb",
+		Live_Keys: "live_gjhGjkgJKGjklGJKgUIGUIfgvyBGVftrDSeaweSdrytfuiPOIoHG",
 	},
 	"visualICT": {
 		PSP:       "visualICT",
-		Test_Keys: "testingvisualICT",
-		Live_Keys: "livingvisualICT",
+		Test_Keys: "test_OUYYGtFRTwserwserxCVgjvbKljIOhuGYdfrtDRWSErdrtDYFG",
+		Live_Keys: "live_RRTGghhjJKKLMmbBvccwqQwEEfvbbbhbHJppOObBCcCddDf",
+	},
+	"unifiedPayment": {
+		PSP:       "unifiedPayment",
+		Test_Keys: "live_BBuUuiKmMNjVGHFcxdrSrstEqWAserDYfJHopkmnBNnVcFGXd",
+		Live_Keys: "test_jjkkuurrrryVVUbiNMKmppNnCCxSAQWeRtYYhnjNJnOJojJojJQ",
 	},
 }
 
