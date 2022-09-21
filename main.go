@@ -29,12 +29,12 @@ func main() {
 	port := os.Getenv("PORT")
 	host := os.Getenv("DATABASE_HOST")
 	if host == "" {
-		host = "database"
+		host = ""
 	}
 	if port == "" {
 		port = "3000"
 	}
-	BenenCtrl := controller.ConnectDB("database", 27017)
+	BenenCtrl := controller.ConnectDB("localhost", 27017)
 	route := routes.BeneRoute{BenenCtrl: BenenCtrl}
 	router := gin.New()
 	//router.Use(middleware.Logger())

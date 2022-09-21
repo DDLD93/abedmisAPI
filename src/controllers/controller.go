@@ -25,7 +25,7 @@ var (
 )
 
 func ConnectDB(host string, port int) *DB_Connect {
-	URI := fmt.Sprintf("mongodb://%s:%v", os.Getenv("database"), port)
+	URI := fmt.Sprintf("mongodb://%s:%v", os.Getenv(host), port)
 	client, err := mongo.NewClient(options.Client().ApplyURI(URI))
 	if err != nil {
 		log.Fatal(err)
