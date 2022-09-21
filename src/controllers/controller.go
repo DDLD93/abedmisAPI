@@ -4,7 +4,6 @@ import (
 	"context"
 	"fmt"
 	"log"
-	"os"
 	"time"
 
 	"github.com/ddld93/abedmis/src/models"
@@ -25,7 +24,7 @@ var (
 )
 
 func ConnectDB(host string, port int) *DB_Connect {
-	URI := fmt.Sprintf("mongodb://%s:%v", os.Getenv(host), port)
+	URI := fmt.Sprintf("mongodb://%s:%v", host, port)
 	client, err := mongo.NewClient(options.Client().ApplyURI(URI))
 	if err != nil {
 		log.Fatal(err)

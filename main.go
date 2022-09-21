@@ -29,7 +29,7 @@ func main() {
 	port := os.Getenv("PORT")
 	host := os.Getenv("DATABASE_HOST")
 	if host == "" {
-		host = ""
+		host = "database"
 	}
 	if port == "" {
 		port = "3000"
