@@ -38,7 +38,7 @@ func main() {
 	route := routes.BeneRoute{BenenCtrl: BenenCtrl}
 	router := gin.New()
 	//router.Use(middleware.Logger())
-	v1 := router.Group("/api/v1")
+	v1 := router.Group("/api/v3")
 	v1.Use(middleware.Auth())
 		{
 			v1.POST("/", route.AddOne())
