@@ -34,7 +34,7 @@ func main() {
 	if port == "" {
 		port = "3000"
 	}
-	BenenCtrl := controller.ConnectDB(host, 27017)
+	BenenCtrl := controller.ConnectDB("database", 27017)
 	route := routes.BeneRoute{BenenCtrl: BenenCtrl}
 	router := gin.New()
 	//router.Use(middleware.Logger())
